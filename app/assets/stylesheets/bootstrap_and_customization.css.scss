@@ -1,1 +1,26 @@
+@import url(http://fonts.googleapis.com/css?family=Bilbo+Swash+Caps);
+
+$body-bg:					#ECF0F1;
+$font-family-sans-serif: 	'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$navbar-height:				55px;
+$navbar-default-bg: 		#C8F7C5;
+$jumbotron-bg: 				#F1A9A0;
+$btn-primary-bg: 			#C8F7C5;
+$btn-primary-color: 		black;
+
+
 @import 'bootstrap';
+
+.center {
+	text-align: center;
+}
+
+.navbar-brand {
+	font-family: 'Bilbo Swash Caps', cursive;
+	font-size: 30px;
+}
+
+.jumbotron h1 {
+	font-family: 'Bilbo Swash Caps', cursive;
+	font-size: 90px;
+}
