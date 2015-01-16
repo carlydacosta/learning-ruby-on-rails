@@ -11,6 +11,12 @@
 	
 	<%= render 'layouts/header' %>
 	<div class="container">
+		<!-- these flash messages are a result of installing the devise gem, which gives tons of functionality for user login-->
+		<!-- notice the embedded ruby tag below does not have an '=' after it. The text b/w the tags will not show on the page -->
+		<% flash.each do |name, msg| %>
+			<!--create a content tag, which will be a div, have a message, have a class, and have dynamic ruby inside -->
+			<%= content_tag(:div, msg, class: "alert alert-info") %>
+		<% end %>
 		<%= yield %>
 	</div> <!--end container div-->
 

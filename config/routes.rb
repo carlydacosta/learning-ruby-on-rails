@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  devise_for :users
   root 'pages#home' # creates root_path variable. says go to the pages controller and get me the 'home' page
   get 'about' => 'pages#about' # creates an about_path variablewhen asked to get the about page, go to the pages controller and get me the 'about' page
   get 'contact' => 'pages#contact'

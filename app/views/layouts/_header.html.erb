@@ -18,6 +18,10 @@
         <li><%= link_to "HOW IT WORKS", howitworks_path %></li>
         <li><%= link_to "ABOUT", about_path %></li>
         <li><%= link_to "CONTACT US", contact_path %></li>
+        <% if user_signed_in? %>
+          <li><%= link_to "LOG OUT", destroy_user_session_path, method: :delete %></li>
+        <% end %>
+
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!--/.container-fluid -->
