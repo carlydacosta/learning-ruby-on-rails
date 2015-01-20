@@ -13,11 +13,11 @@
   <% end %>
 
   <!-- this part is the form seen on the edit and new pages -->
-  <div class="field">
+  <div class="form-group">
     <%= f.label :description %><br>
-    <%= f.text_field :description %>
+    <%= f.text_field :description, class: "form-control" %>
   </div>
-  <div class="actions">
-    <%= f.submit %>
+  <div class="form-group">
+    <%= f.submit class: "btn btn-primary" %>
   </div>
 <% end %>
