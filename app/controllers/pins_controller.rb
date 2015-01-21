@@ -58,6 +58,7 @@ class PinsController < ApplicationController
     end
 
     def pin_params
-      params.require(:pin).permit(:description)
+      # this is what I permit the user to be able to update inside the pin form - descript and an image
+      params.require(:pin).permit(:description, :image)
     end
 end
